@@ -8,11 +8,13 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'Alice was beginning to get very tired of sitting by her sister on the bank.',
+      'THE poet who publishes an original work',
   'example2':
-      'Buda-Pesth seems a wonderful place.',
+      'I have read Rabelais twice in my life.',
   'example3':
-      'Scepticism was as much the result of knowledge, as knowledge is of scepticism.'      
+      'On the beach below the parade were a succession of small crowds,' 
+  'example4':
+      'Mrs. Fielding waited until she finished her light repast,'
 };
 
 function status(statusText) {
