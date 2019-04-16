@@ -8,7 +8,7 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'It was too hard to linger there long, bowed down with shame and sorrow.',
+      'But her thirst for revenge was not sated yet. ',
   'example2':
       'And love men well, but love them not too much.',
   'example3':
