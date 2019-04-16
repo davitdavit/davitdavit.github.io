@@ -8,13 +8,13 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'THE poet who publishes an original work',
+      'It was too hard to linger there long, bowed down with shame and sorrow.',
   'example2':
-      'I have read Rabelais twice in my life.',
+      'And love men well, but love them not too much.',
   'example3':
-      'On the beach below the parade were a succession of small crowds,' 
+      'which he often carried when there was a chance of interviewing anybody.',  
   'example4':
-      'Mrs. Fielding waited until she finished her light repast,'
+      'Every fine day the Prince would go hunting.'  
 };
 
 function status(statusText) {
@@ -49,11 +49,11 @@ function doPredict(predict) {
   const result = predict(textField.value);
   score_string = "Class scores: ";
   for (var x in result.score) {
-    score_string += x + " ->  " + result.score[x].toFixed(3) + ", "
+    score_string += x + " ->  " + result.score[x].toFixed(4) + ", "
   }
   //console.log(score_string);
   status(
-      score_string + ' elapsed: ' + result.elapsed.toFixed(3) + ' ms)');
+      score_string + ' elapsed: ' + result.elapsed.toFixed(4) + ' ms)');
 }
 
 function prepUI(predict) {
