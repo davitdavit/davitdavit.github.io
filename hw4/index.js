@@ -8,13 +8,13 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'THE poet who publishes an original work',
+      'Everybody that wants to join has got to take an oath, and write his name in blood.',
   'example2':
-      'I have read Rabelais twice in my life.',
+      'So that if there be a lover in the army, whether his love be youth or maiden, he may be more eager to win the prize of valour..',
   'example3':
-      'On the beach below the parade were a succession of small crowds,' 
+      'Swift at the mandate pleased Tritonia flies, And stoops impetuous from the cleaving skies.',  
   'example4':
-      'Mrs. Fielding waited until she finished her light repast,'
+      'Iago. It is meerly a Lust of the blood, and a permission of the will.'  
 };
 
 function status(statusText) {
@@ -49,11 +49,11 @@ function doPredict(predict) {
   const result = predict(textField.value);
   score_string = "Class scores: ";
   for (var x in result.score) {
-    score_string += x + " ->  " + result.score[x].toFixed(3) + ", "
+    score_string += x + " ->  " + result.score[x].toFixed(4) + ", "
   }
   //console.log(score_string);
   status(
-      score_string + ' elapsed: ' + result.elapsed.toFixed(3) + ' ms)');
+      score_string + ' elapsed: ' + result.elapsed.toFixed(4) + ' ms)');
 }
 
 function prepUI(predict) {
